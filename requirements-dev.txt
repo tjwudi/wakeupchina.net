@@ -1,0 +1,8 @@
+aspy.yaml==0.2.1
+cached-property==1.3.0
+jsonschema==2.5.1
+nodeenv==0.13.6
+ordereddict==1.1
+pre-commit==0.7.3
+PyYAML==3.11
+virtualenv==13.1.2
