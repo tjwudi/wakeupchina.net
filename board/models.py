@@ -22,3 +22,6 @@ class Post(models.Model):
             A Post object. This Post object should have published = True.
         """
         pass
+
+    def __str__(self):
+        return self.title
