@@ -1,0 +1,23 @@
+-   repo: https://github.com/pre-commit/pre-commit-hooks.git
+    sha: e306ff3b7d0d9a6fc7d128ef9ca2e0b6e6e76e8f
+    hooks:
+    -   id: trailing-whitespace
+    -   id: end-of-file-fixer
+    -   id: autopep8-wrapper
+    -   id: check-docstring-first
+    -   id: check-json
+    -   id: check-yaml
+    -   id: debug-statements
+    -   id: name-tests-test
+    -   id: requirements-txt-fixer
+    -   id: flake8
+-   repo: https://github.com/pre-commit/pre-commit.git
+    sha: 75aaadd4c455043b0fff3cc22eb480f6a120caaf
+    hooks:
+    -   id: validate_config
+    -   id: validate_manifest
+-   repo: https://github.com/asottile/reorder_python_imports.git
+    sha: 8b583ac1beb0dd0f14c4bceb0a53bb1023cb3dd7
+    hooks:
+    -   id: reorder-python-imports
+        language_version: python3.5
