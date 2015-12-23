@@ -15,13 +15,14 @@ class Post(models.Model):
     # It's generally a call for action like "Drive less, walk more".
     title = models.CharField(max_length=255)
 
-    @classmethod
-    def pick_one_published(cls):
-        """Randomly pick one published post.
-        Returns:
-            A Post object. This Post object should have published = True.
-        """
-        pass
-
     def __str__(self):
         return self.title
+
+    def as_json(self):
+        """Returns JSON representation of the Post.
+        """
+        return {
+            'title': self.title,
+            'short_title': self.short_title,
+            'description': self.description,
+        }
